@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+	<head>  
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    var hashTagActive = "";
+    $(".scroll").click(function (event) {
+        if(hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
+            event.preventDefault();
+            //calculate destination place
+            var dest = 0;
+            if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+                dest = $(document).height() - $(window).height();
+            } else {
+                dest = $(this.hash).offset().top;
+            }
+            //go to destination
+            $('html,body').animate({
+                scrollTop: dest
+            }, 2000, 'swing', function(){
+                hashTagActive = "";
+            });
+            hashTagActive = this.hash;
+        }
+    });
+});
+</script>
+        <script src="code.jquery.com/jquery-3.2.1.js" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/fb81b90f10.js"></script>
+        <title>Marko Ahola</title>
+		<meta name="viewport" content="initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+        <a href="#" id="top"></a>
+        <div class="header">
+            <div class="logo_shadow">
+            <div class="logo">
+                <h3>Marko Ahola</h3>
+            </div>
+            </div>
+            <div class="slogan">
+                <p>WebDesigns since 2013</p>
+            </div>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#top" class="scroll"><i class="fa fa-home fa-2x" aria-hidden="true"></i><span>Home</span></a></li>
+                <li><a href="#one" class="scroll"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i><span>Info</span></a></li>
+                <li><a href="#two" class="scroll"><i class="fa fa-bolt fa-2x" aria-hidden="true"></i><span>Projects</span></a></li>
+                <li><a href="#three" class="scroll"><i class="fa fa-tasks fa-2x" aria-hidden="true"></i><span>Content</span></a></li>
+                <li><a href="#four" class="scroll"><i class="fa fa-terminal fa-2x" aria-hidden="true"></i><span>Terminal</span></a></li>
+                <li><a href="#five" class="scroll"><i class="fa fa-trophy fa-2x" aria-hidden="true"></i><span>Trophies</span></a></li>
+                <li><a href="#six" class="scroll"><i class="fa fa-hand-lizard-o fa-2x" aria-hidden="true"></i><span>Ehm?</span></a></li>
+                <li><a href="#seven" class="scroll"><i class="fa fa-rocket fa-2x" aria-hidden="true"></i><span>Rockets</span></a></li>
+                <li><a href="#eight" class="scroll"><i class="fa fa-wifi fa-2x" aria-hidden="true"></i><span>WiFi</span></a></li>
+                <li><a href="#nine" class="scroll"><i class="fa fa-television fa-2x" aria-hidden="true"></i><span>TV Mode</span></a></li>
+            </ul>
+        </div>
+        <div class="content_white">
+            <div class="content">
+                <h3>Home</h3>
+            <p>Si fugiat consequat ullamco, a non fugiat tamen minim. Si cillum proident 
+                cupidatat. Consequat graviterque non senserit, eram offendit an elit malis, est 
+                malis illum sint incurreret id amet pariatur consectetur, quamquam a sunt 
+                proident aut aut enim hic summis nam incurreret legam fugiat ea quorum, admodum 
+                ne sunt pariatur. Veniam incididunt e aliquip e incididunt quid senserit 
+                incurreret, ex qui fore cupidatat, in culpa domesticarum. Sint commodo vidisse. 
+                Quis possumus voluptatibus ita ex quibusdam hic deserunt o varias aut si multos 
+                cupidatat, o qui quid aliquip se aut fore consequat admodum hic esse si et legam 
+                tempor, expetendis aute aut officia illustriora eu te admodum est vidisse. 
+                Admodum tamen ullamco, occaecat te legam, duis ne eiusmod est ullamco te 
+                nescius.</p>
+                </div>
+        </div>
+            <a href="#" id="one"></a>
+            <div class="content_green">
+                <div class="content">
+                    <h3>Info</h3>
+                <p>Consequat summis aute expetendis illum, quid fabulas possumus, cupidatat esse 
+                    singulis proident do et quem elit minim proident. Ullamco transferrem aut 
+                    cupidatat, elit quamquam reprehenderit. Ad ab graviterque. Tamen familiaritatem 
+                    cernantur quorum singulis in quid probant id admodum, e magna irure legam 
+                    singulis non elit senserit iis quae malis non quo in duis admodum, senserit 
+                    tamen fore incurreret cillum, an eram tempor, mentitum aute eiusmod. Se velit 
+                    cohaerescant ab et varias illustriora non quorum ullamco qui tamen nisi, ita 
+                    tamen se nisi, ea magna occaecat despicationes, iudicem quem ubi incididunt 
+                    firmissimum, lorem incididunt do aliquip, ingeniis legam sunt commodo summis. 
+                    Nescius fugiat a doctrina exercitation, esse ita ex irure ingeniis ne a lorem 
+                    consequat mentitum hic nam sed multos eiusmod qui et noster eiusmod consequat 
+                    qui ita legam malis o appellat, nostrud magna litteris, est enim eruditionem. 
+                    Varias sed quo irure tempor eu cupidatat irure est voluptate arbitrantur, 
+                    mandaremus illustriora in cernantur, expetendis efflorescere est ingeniis.</p>
+                </div>
+            </div>
+            <a href="#" id="two"></a>
+            <div class="content_white">
+                <div class="content">
+                <p>Ea fore distinguantur e nam et anim irure esse, irure proident nam cupidatat, 
+                    fugiat imitarentur mandaremus minim probant. De aut sint fabulas. Esse senserit 
+                    commodo. Dolor admodum ut tempor, id ut exquisitaque a dolore ea nam dolor 
+                    arbitror est anim ex tempor a an quorum aliqua non proident si ne est amet 
+                    laborum, cernantur a mentitum, id fugiat quibusdam. Noster ullamco iis 
+                    eruditionem est admodum ubi vidisse. Ex admodum et admodum, sint proident 
+                    expetendis, quem proident qui arbitrantur, aut nulla id nisi ne admodum e 
+                    multos, laboris varias excepteur aut a malis litteris officia in hic se cillum 
+                    quis labore. Laboris quorum incurreret.</p>
+                    </div>
+            </div>
+            <a href="#" id="three"></a>
+            <div class="content_blue">
+                <div class="content">
+                <p>Vidisse a culpa ullamco qui o labore iudicem tempor. Tamen a laboris eu aliqua 
+                    ne te nescius domesticarum. Dolore o incurreret non ad quae familiaritatem. Quo 
+                    sunt incurreret distinguantur, labore eu a eram mentitum an iis ubi fore 
+                    occaecat do ut eu fugiat proident. Hic multos pariatur laboris te in tamen 
+                    domesticarum. Ex noster nescius. Senserit anim cernantur cernantur, ea enim 
+                    fidelissimae, quis non est ipsum probant, laboris ex aute tempor, ad nam 
+                    coniunctione est deserunt ex fore eu malis aut appellat, ab culpa iudicem.</p>
+                </div>
+            </div>
+            <a href="#" id="four"></a>
+            <div class="content_white">
+                <div class="content">
+                <p>Se fabulas ex offendit, id irure eram veniam officia. Do noster aliqua iis 
+                    arbitror, quo noster mandaremus eruditionem si enim offendit te lorem varias qui 
+                    consequat illum mentitum laborum. Ex eu minim cernantur nam nisi offendit an 
+                    offendit nam est veniam doctrina nostrud aut ullamco quid labore eu labore. Elit 
+                    ex occaecat ab ut ea esse arbitror, quem e aliquip nam enim, vidisse cillum 
+                    incididunt laborum. Summis nescius te distinguantur, amet exquisitaque excepteur 
+                    illum offendit, expetendis praesentibus si probant nam iudicem lorem deserunt 
+                    probant. Si id velit incurreret qui litteris ex enim senserit. Arbitror multos 
+                    te laborum graviterque. Anim pariatur reprehenderit, iudicem labore ingeniis eu 
+                    doctrina fore duis admodum multos aut ita te quid dolor ipsum.</p>
+                </div>
+            </div>
+            <a href="#" id="five"></a>
+            <div class="content_red">
+                <div class="content">
+                <p>Fugiat firmissimum voluptate quae nostrud. Ingeniis comprehenderit id voluptate 
+                    qui nam si fidelissimae. Nam ipsum aliquip aliquip. E velit varias noster 
+                    mandaremus eu est quae aute quo voluptate, hic quid illum quid officia, te e 
+                    fugiat litteris a quo iudicem do proident et iudicem tamen qui consequat 
+                    domesticarum, o fugiat hic minim, varias in laborum sed veniam. In fore 
+                    appellat, iudicem ita nostrud, non magna commodo illustriora, do quorum magna 
+                    quorum litteris. Si an fidelissimae, id aliqua aliqua ut laboris de minim 
+                    quibusdam te aliqua anim, elit aliquip coniunctione. Multos ad mandaremus si 
+                    anim nam esse cupidatat graviterque.</p>
+                </div>
+            </div>
+            <a href="#" id="six"></a>
+            <div class="content_white">
+                <div class="content">
+                <p>Ipsum cernantur ut consequat te occaecat enim quorum voluptate summis hic si de 
+                    quae doctrina o quid iudicem se culpa fugiat. Litteris praesentibus nam quamquam 
+                    a nam malis cernantur eiusmod quo quid commodo incurreret eu aut quem fabulas 
+                    sed elit expetendis se coniunctione, commodo sed fugiat aut an ab labore sunt 
+                    cillum est laboris ne summis. Tamen senserit cupidatat. Id quis amet esse 
+                    singulis, in noster nam legam, summis est e quid appellat, arbitror a ipsum. 
+                    Minim quamquam nostrud ubi magna si laboris hic fore ad ut lorem occaecat de 
+                    culpa adipisicing possumus fore offendit. Occaecat cohaerescant ne arbitror iis 
+                    quo de aute expetendis. Probant lorem iudicem, offendit domesticarum ex 
+                    cernantur id occaecat hic incurreret ex occaecat an magna. Mandaremus 
+                    imitarentur ita nescius, quamquam ne laborum, ex sunt sempiternum, fabulas ea 
+                    excepteur, ita quamquam si offendit aut non illum vidisse tractavissent ne et 
+                    culpa arbitrantur, eu lorem relinqueret.</p>
+                </div>
+            </div>
+            <a href="#" id="seven"></a>
+            <div class="content_green">
+                <div class="content">
+                <p>Ita nam quid ullamco. E sed summis sint lorem o anim tempor philosophari, quo 
+                    tamen relinqueret ea mandaremus quid incurreret commodo, anim de in aute laborum 
+                    ad mandaremus est pariatur hic si fore noster quis nescius, expetendis amet sed 
+                    proident arbitrantur. Incididunt labore offendit an nam multos ut quorum si 
+                    iudicem veniam esse an duis de incurreret legam quae fabulas varias. Illum 
+                    exquisitaque possumus fore laboris. Varias eiusmod hic deserunt, esse ullamco ex 
+                    enim quae. Qui possumus praetermissum, in iis voluptatibus te cupidatat culpa 
+                    cillum nescius amet, incurreret ad fore laboris.</p>
+                </div>
+            </div>
+            <a href="#" id="eight"></a>
+            <div class="content_white">
+                <div class="content">
+                <p>Officia illustriora sed singulis ab enim o ab eram expetendis. Magna voluptate 
+                    ingeniis, veniam familiaritatem quibusdam minim possumus. Mentitum reprehenderit 
+                    ita aliquip. Offendit hic incurreret, quid ullamco ingeniis, fugiat occaecat 
+                    incurreret, ex occaecat imitarentur. Se lorem quid veniam mentitum, ex ipsum 
+                    iudicem expetendis. Aliqua in tempor se labore sed laborum exquisitaque nam 
+                    vidisse a quo officia iis tempor, quo de firmissimum.</p>
+                </div>
+            </div>
+            <a href="#" id="nine"></a>
+            <div class="content_blue">
+                <div class="content">
+                <p>Hic aut ipsum quamquam. Ingeniis ex noster tempor, fore incurreret iis ullamco 
+                    de aliqua nescius excepteur, ita ullamco ita arbitror, varias quo sed minim 
+                    laborum ita quorum senserit appellat, duis quamquam commodo, e ea veniam fore 
+                    illum. Ut sed aliqua quamquam sed aut varias deserunt imitarentur e consequat 
+                    duis nostrud quamquam se lorem mandaremus laborum. Incididunt sint quae pariatur 
+                    elit iis tamen laborum nam cupidatat, quamquam ex amet, litteris illum cillum deserunt imitarentur e consequat 
+                    duis nostrud quamquam se lorem mandaremus laborum. Incididunt sint quae pariatur 
+                    elit iis tamen laborum nam cupidatat, quamquam ex amet, litteris illum cillum 
+                  </p>
+                </div>
+            </div>
+        <div class="footer">
+            <p>&copy; Marko Ahola</p>
+        </div>
+	</body>
+</html>

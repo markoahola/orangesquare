@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Ranga');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+b {
+    font-size: 6vmin;
+}
+
+.header {
+    width: 100%;
+    height: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: rgb(51, 51, 51);
+    border-bottom: 4px solid black;
+}
+
+.logo_shadow {
+    width: 40%;
+    height: 35vmin;
+    box-shadow: 0 0 50px;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    background: rgb(51, 51, 51);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 35px solid orange;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 60px  black;
+    border-radius: 10px;
+}
+
+.logo h3 {
+    font-size: 7vmin;
+}
+
+.slogan {
+    width: 100%;
+    text-align: center;
+    margin-top: -6vmin;
+}
+
+.slogan p {
+    font-size: 5vmin;
+    font-family: 'Ranga', cursive;
+}
+
+.navbar {
+    width: 6vmin;
+    background: #000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: 1s;
+}
+
+.navbar p {
+    color: #FFF;
+    text-align: center;
+}
+
+.navbar:hover {
+    width: 12vmin;
+}
+
+.navbar ul li {
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+}
+
+.navbar a {
+    vertical-align: middle;
+    line-height: 10vh;
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar span {
+    font-size: 2vmin;
+    transition: 1.5s;
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: #000;
+    margin-top: -7vmin;
+}
+
+.navbar:hover span {
+    color: #FFF;
+}
+
+.navbar a:hover {
+    color: #666666;
+}
+
+.content_white {
+    width: 100%;
+    height: 50vmin;
+    background: rgb(242, 242, 242);
+    overflow: hidden;
+    display: table;
+}
+
+.content_green {
+    width: 100%;
+    height: 50vmin;
+    background: rgb(166, 255, 77);
+    overflow: hidden;
+    display: table;
+}
+
+.content_blue {
+    width: 100%;
+    height: 50vmin;
+    background: rgb(77, 166, 255);
+    overflow: hidden;
+    display: table;
+}
+
+.content_red {
+    width: 100%;
+    height: 50vmin;
+    background: rgb(236, 95, 95);
+    overflow: hidden;
+    display: table;
+}
+
+.content {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.content_white p, .content_green p, .content_blue p, .content_red p {
+    font-size: 2.5vmin;
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.content_white h3, .content_green h3, .content_blue h3, .content_red h3 {
+    font-size: 3.5vmin;
+}
+
+.footer {
+    width: 100%;
+    height: 5vmin;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    color: #FFF;
+    font-size: 2vmin;
+}
